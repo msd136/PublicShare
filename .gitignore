@@ -1,0 +1,39 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.cache
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# PowerShell
+*.ps1xml
+
+# Archives and packages
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Common build/output folders
+dist/
+build/
+out/
+
+# Optional: local config files
+.env
+.env.*
