@@ -1,6 +1,8 @@
 <# 
 This will correct problems with OneDrive prompting with proxy or network connection errors where you don't have proxy configured (errors 2606 and 2603, respectively)
 Run in system context.  If users are not logged off, their hives are already present in HKU\<sid>
+
+Update your TLS requirements before running. TLS 1.2 only = 0x800
 #>
 
 # Get all user profile paths from the registry (skips system profiles)
