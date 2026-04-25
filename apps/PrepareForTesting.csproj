@@ -3,6 +3,7 @@
   <PropertyGroup>
     <!-- WinExe = no console window flashes on launch -->
     <OutputType>WinExe</OutputType>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Nullable>enable</Nullable>
