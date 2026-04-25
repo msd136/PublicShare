@@ -3,14 +3,15 @@
   <PropertyGroup>
     <!-- WinExe = no console window flashes on launch -->
     <OutputType>WinExe</OutputType>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>PrepareForTesting</RootNamespace>
     <AssemblyName>PrepareForTesting</AssemblyName>
-    <Version>2.0.0</Version>
+    <Version>2.1.0</Version>
+    <!-- Required to build a Windows-targeted project from macOS or Linux -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
 
   <!-- For `dotnet publish -c Release` to produce a single .exe -->
