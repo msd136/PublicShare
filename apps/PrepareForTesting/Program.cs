@@ -17,10 +17,10 @@ internal static class Program
     {
         "teams", "chrome", "msedge", "winword", "excel",
         "OUTLOOK", "ONENOTE", "acrobat", "acrord32",
-        "snippingtool", "msteams", "ms-teams", "MSTeamsSetup",
-        "TeamsMeetingAddin", "TeamsWebView", "Update",
-        "POWERPNT", "Photos", "ONENOTEM", "Notepad", "mspaint",
-        "MSACCESS", "CalculatorApp"
+        "snippingtool", "msteams", "ms-teams", "MSTeamsSetup","MSTeamsSetupx64",
+        "TeamsMeetingAddin", "TeamsWebView", "Update", "Compass Cloud",
+        "POWERPNT", "Photos", "ONENOTEM", "Notepad", "mspaint", "DRCInsight",
+        "MSACCESS", "CalculatorApp", "olk", "vlc", "zoom", "slack"
     };
 
     [STAThread]
