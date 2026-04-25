@@ -6,12 +6,13 @@ A small Windows utility that closes common applications (Outlook, Teams, Chrome,
 
 When run, the tool:
 
-1. Iterates through a configurable list of process names (Outlook, Teams, Chrome, etc.)
+1. Iterates through a configurable list of process names (Outlook, new Outlook, Teams, Chrome, etc.)
 2. Terminates each process **and its entire descendant tree** — this catches Teams' helper processes, Edge renderers, Office sub-processes, and other background helpers that simple "kill by name" tools leave behind
 3. Retries up to three times for stragglers
-4. Shows a single confirmation dialog with an OK button: *"Applications closed successfully. You're ready to begin testing."*
+4. Unmutes the default playback device and sets master volume to 60%
+5. Shows a single confirmation dialog with an OK button: *"Applications closed. Speaker set to 60%. You're ready to begin testing."*
 
-If anything fails (access denied, stubborn process, etc.), the dialog switches to a warning and lists what couldn't be closed.
+If anything fails (access denied, stubborn process, audio device unavailable, etc.), the dialog switches to a warning and lists what couldn't be done.
 
 ## Prerequisites
 
@@ -112,6 +113,16 @@ private static readonly string[] TargetProcesses =
 Process names should be **without** the `.exe` extension and are matched case-insensitively. To find a process's name on Windows, open Task Manager → Details tab → look at the "Name" column. Strip the `.exe` to get the value to use here.
 
 After editing, rebuild with `dotnet publish -c Release`.
+
+### Customizing the speaker volume
+
+The target volume is defined as a constant near the top of `Program.cs`:
+
+```csharp
+private const float SpeakerVolumeTarget = 0.60f;  // 60%
+```
+
+The value is a fraction from `0.0` (silent) to `1.0` (max). Change it and rebuild to apply.
 
 ## Project structure
 
