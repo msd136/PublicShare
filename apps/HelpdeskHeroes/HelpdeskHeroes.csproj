@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>HelpdeskHeroes</RootNamespace>
+    <AssemblyName>HelpdeskHeroes</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- WinForms is the primary UI framework. -->
+    <UseWindowsForms>true</UseWindowsForms>
+
+    <!-- WPF is enabled solely so the build pulls in UIAutomationClient /
+         UIAutomationTypes (System.Windows.Automation), which BrowserTabs.cs
+         and ActiveContext.cs depend on. We don't actually use any WPF UI. -->
+    <UseWPF>true</UseWPF>
+
+    <!-- ============================================================== -->
+    <!-- BUMP THESE PER RELEASE                                         -->
+    <!-- If you use a deployment tool that compares FileVersion against -->
+    <!-- a baseline (e.g. Intune detection scripts, SCCM, Jamf, etc.),  -->
+    <!-- bump the matching baseline value alongside this file.          -->
+    <!-- ============================================================== -->
+    <Version>1.6.2</Version>
+    <FileVersion>1.6.2.0</FileVersion>
+    <AssemblyVersion>1.6.2.0</AssemblyVersion>
+    <InformationalVersion>1.6.2</InformationalVersion>
+
+    <Product>Helpdesk Heroes</Product>
+    <!-- TODO: Set <Company> and <Copyright> to your organization. -->
+    <Company>Your Organization</Company>
+    <Copyright>© Your Organization</Copyright>
+    <Description>Helpdesk ticket launcher</Description>
+
+    <!-- Icon embedded in the EXE header (titlebar / Alt-Tab / taskbar). -->
+    <ApplicationIcon>HelpdeskHeroes.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Same icon shipped as an embedded resource so Branding.cs can hand it
+         to Form.Icon at runtime without depending on a side-by-side file. -->
+    <EmbeddedResource Include="HelpdeskHeroes.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- AD lookup for UPN resolution (UserPrincipal.UserPrincipalName).
+         System.Management is needed for WMI BIOS serial reads in SystemInfo.cs. -->
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="8.0.0" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
