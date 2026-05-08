@@ -7,6 +7,7 @@ Self-contained utilities and small applications. Each subfolder is an independen
 | App | Purpose | Platform |
 |---|---|---|
 | [PrepareForTesting](./PrepareForTesting) | Closes Outlook, Teams, Chrome, Office, etc. before a proctored test, then shows a confirmation dialog. | Windows (.NET 8) |
+| [HelpdeskHeroes](./HelpdeskHeroes) | Native Windows app that collects user and computer data and allows for quick contact of the helpdesk, FAQs and other resources. | Windows (.NET 8) |
 
 <!-- Add new entries above this line as new apps are added. -->
 
