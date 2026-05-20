@@ -140,6 +140,3 @@ A robust remediation script will also verify the downloaded EXE's FileVersion ma
 - **Send always fails with "API key not configured"** — the registry values aren't set. Run your deployment script locally as Administrator, or set them manually (see Build section above).
 - **Detection script reports OUTDATED on a fresh install** — `<FileVersion>` in the csproj didn't get bumped, or you bumped it but didn't republish. Verify with: `(Get-Item 'C:\Program Files\HelpdeskHeroes\HelpdeskHeroes.exe').VersionInfo.FileVersion`
 
-## License
-
-Add your preferred license here (MIT, Apache-2.0, etc.). The codebase has no implicit license — add one before publishing if you want others to legally use or modify it.
