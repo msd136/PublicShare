@@ -141,6 +141,3 @@ PrepareForTesting/
 
 **A process I added isn't being killed.** Confirm the exact process name in Task Manager → Details tab. Some apps run under unexpected names (Teams, for example, has historically run as `teams`, `msteams`, and `ms-teams` across different versions — all three are in the default list for that reason).
 
-## License
-
-Add your preferred license here.
