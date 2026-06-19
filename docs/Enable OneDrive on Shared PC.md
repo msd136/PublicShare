@@ -1,5 +1,5 @@
 ## OMA-URI Setting 1
-This setting is used to enable Shared PC mode with OneDrive sync enabled.
+
 
 - **Name:** Provide a name for the OMA-URI setting to distinguish it from other similar settings.
 - **Description:** *(Optional)* Provide a description for the OMA-URI setting to further differentiate settings.
@@ -13,7 +13,7 @@ This setting is used to enable Shared PC mode with OneDrive sync enabled.
 `DisableOneDriveFileSync`
 
 ### Description
-Left means right, right means left because Microsoft is always bass ackwards... 
+This setting is used to ensure that on a Shared PC, where drives are automatically hidden, OneDrive sync is still enabled.
 
 ### OMA-URI
 `./Device/Vendor/MSFT/Policy/Config/System/DisableOneDriveFileSync`
