@@ -1,11 +1,11 @@
 ## OMA-URI Setting
-This setting is used to skip the user status page during the first sync experience.
+
 
 ### Name
 `SkipUserStatusPage`
 
 ### Description
-Whatever helps you when you read it
+This setting is used to skip the user status page during the first sync experience.
 
 ### OMA-URI
 `./Device/Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage`
