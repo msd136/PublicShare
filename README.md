@@ -24,7 +24,7 @@ Examples of topics that may appear here:
 - General systems administration documentation.
 
 ## File Organization
-
+- `apps/` — .NET app projects.
 - `images/` — screenshots, reference photos, and diagrams.
 - `scripts/` — automation scripts or helper tools.
 - `docs/` — notes, procedures, or reference documentation.
